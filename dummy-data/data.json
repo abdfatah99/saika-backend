@@ -1,0 +1,85 @@
+[
+    {
+        "eventName": "pelatihan API",
+        "eventImage": "https://cloudinary.com",
+        "eventCategory": "RPL",
+        "benefits": "anda akan memahami bagaimana API bekerja",
+        "description": "Pelatihan API adalah ...",
+        "eventDate": "2015-03-25",
+        "paymentType": "Free",
+        "price": "0",
+        "registrationLink": "http://bla.com",
+        "occurenceType": "online",
+        "location": "ahmad dahlan building",
+        "address": "jln. merdeka no 5",
+        "jamMulai": "2018-12-10T13:49:51.141Z",
+        "jamBerakhir": "2018-12-10T13:49:51.141Z",
+        "instagram": "instagram.com",
+        "facebook": "facebook.com",
+        "twitter": "twitter.com"
+    },
+    {   
+        "eventName": "pelatihan NodeJS lanjutan",
+        "eventImage": "https://cloudinary.com",
+        "eventCategory": "RPL",
+        "benefits": "anda akan mengetahui penggunaan nodejs pada skala industri",
+        "description": "Pelatihan ini sangat berguna untuk anda yang ingin memahami ...", 
+        "eventDate": "2015-03-25",
+        "paymentType": "Free",
+        "price": "0",
+        "registrationLink": "http://bla.com",
+        "occurenceType": "online",
+        "location": "ahmad dahlan building",
+        "address": "jln. merdeka no 5",
+        "jamMulai": "2018-12-10T13:49:51.141Z",
+        "jamBerakhir": "2018-12-10T13:49:51.141Z",
+        "instagram": "instagram.com",
+        "facebook": "facebook.com",
+        "twitter": "twitter.com"
+        
+    },
+    {   
+        "eventName": "pelatihan Javascript Dasar",
+        "eventImage": "https://cloudinary.com",
+        "eventCategory": "RPL",
+        "benefits": "Pelatihan ini sangat berguna bagi anda yang ingin meningkatkan kemampuan ...",
+        "description": "Pelatihan ini sangat berguna untuk anda yang ingin memahami ...", 
+        "eventDate": "2015-03-25",
+        "paymentType": "Free",
+        "price": "0",
+        "registrationLink": "http://bla.com",
+        "occurenceType": "online",
+        "location": "ahmad dahlan building",
+        "address": "jln. merdeka no 5",
+        "jamMulai": "2018-12-10T13:49:51.141Z",
+        "jamBerakhir": "2018-12-10T13:49:51.141Z",
+        "instagram": "instagram.com",
+        "facebook": "facebook.com",
+        "twitter": "twitter.com"
+        
+    },
+    {   
+        "eventName": "pelahihan RESTful API dengan menggunakan GO",
+        "eventImage": "https://cloudinary.com",
+        "eventCategory": "RPL",
+        "benefits": "Practical Learning with GO, langsung bisa buat resful api",
+        "description": "dalam pelatihan ini, anda akan dibimbing langsung oleh tutor2 professional ...", 
+        "eventDate": "2015-03-25",
+        "paymentType": "Free",
+        "price": "0",
+        "registrationLink": "http://bla.com",
+        "occurenceType": "online",
+        "location": "ahmad dahlan building",
+        "address": "jln. merdeka no 5",
+        "jamMulai": "2018-12-10T13:49:51.141Z",
+        "jamBerakhir": "2018-12-10T13:49:51.141Z",
+        "instagram": "instagram.com",
+        "facebook": "facebook.com",
+        "twitter": "twitter.com"
+        
+    }
+    
+
+]
+
+
