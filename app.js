@@ -24,7 +24,7 @@ app.use("/event-image", express.static("./public/event-image"));
 dotenv.config();
 
 // connect to database
-mongoose.connect("mongodb://localhost:8081/saikaDatabase");
+mongoose.connect("mongodb://db:27017/saikaDatabase");
 
 // initial root for service
 //app.use("/test", testAPI)

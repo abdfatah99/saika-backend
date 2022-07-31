@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import Event from "../models/event.model.js";
 
 export default class eventDAO {
-    static async getEvent() {
+    static async getEvent(hostname) {
         const databaseResult = await Event.find()
             .exec()
             .then((docs) => {
@@ -12,8 +12,10 @@ export default class eventDAO {
                     event: docs.map((doc) => {
                         return {
                             eventName: doc.eventName,
+                            eventCategory: doc.eventCategory,
                             //platform
                             tanggal: doc.eventDate,
+                            eventImageUrl: hostname + "/event-image/" + doc.eventImageUrl,
                             eventDetail: {
                                 type: "GET",
                                 url: "http://localhost:3001/event/" + doc._id,

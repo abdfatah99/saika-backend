@@ -16,6 +16,11 @@ class userController {
                         message: "Mail exist",
                     });
                 } else {
+                    if (req.body.password !== req.body.confirmPassword){
+                        return res.status(200).json({
+                            message: "password dan konfirmasi password tidak sama"
+                        })
+                    }
                     // if user email is not exist
                     bcrypt.hash(req.body.password, 10, (err, hash) => {
                         if (err) {
@@ -59,9 +64,10 @@ class userController {
                         message: "Auth Failed",
                     });
                 }
-                console.log("find user: ")
-                console.log(user)
-                bcrypt.compare( // bcrypt(reqPass, dbPass, (err, result) => {})
+                console.log("find user: ");
+                console.log(user);
+                bcrypt.compare(
+                    // bcrypt(reqPass, dbPass, (err, result) => {})
                     req.body.password,
                     user[0].password,
                     (err, result) => {
@@ -71,18 +77,20 @@ class userController {
                             });
                         }
                         if (result) {
-                            const waktu = 24 * 30
+                            console.log(user)
                             const token = jwt.sign(
                                 {
                                     email: user[0].email,
                                     userId: user[0]._id,
                                 },
                                 process.env.KEY_TOKEN,
-                                { expiresIn: `${waktu}h` }
                             );
                             return res.status(200).json({
-                                message: "Auth Successful",
-                                token: token,
+                                body: {
+                                    _id: user[0].id,
+                                    email: user[0].email
+                                },
+                                token: token, // tambah userId, emai. 
                             });
                         }
                         res.status(401).json({

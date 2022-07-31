@@ -3,12 +3,10 @@ import os from 'os'
 
 class eventController {
     static async getEvent(req, res, next) {
+        const hostname = req.headers.host
         try {
-            const getEventResult = await eventDAO.getEvent();
-            res.status(200).json({
-                count: getEventResult.length,
-                Event: getEventResult,
-            });
+            const getEventResult = await eventDAO.getEvent(hostname);
+            res.status(200).send(getEventResult)
         } catch (error) {
             res.status(500).json({
                 message: error,
@@ -63,9 +61,7 @@ class eventSpecificController {
         const id = req.params.eventId;
         const findResult = await eventDAO.getEventDetail(id);
         if (findResult) {
-            res.status(200).json({
-                eventDetail: findResult,
-            });
+            res.status(200).send(findResult)
         } else {
             res.status(500).json({
                 message: "cannot find the event",
