@@ -13,7 +13,7 @@ class userController {
                 // if user exist
                 if (user.length >= 1) {
                     return res.status(409).json({
-                        message: "Mail exist",
+                        message: "Email Sudah Tersedia",
                     });
                 } else {
                     if (req.body.password !== req.body.confirmPassword){

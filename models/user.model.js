@@ -20,6 +20,9 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true,
     },
+    listFiends: [
+        { type: String } 
+    ]
 });
 
 export default mongoose.model("User", userSchema);

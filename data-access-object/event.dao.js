@@ -18,7 +18,7 @@ export default class eventDAO {
                             eventImageUrl: hostname + "/event-image/" + doc.eventImageUrl,
                             eventDetail: {
                                 type: "GET",
-                                url: "http://localhost:3001/event/" + doc._id,
+                                url: hostname +"/event/" + doc._id,
                             },
                         };
                     }),
